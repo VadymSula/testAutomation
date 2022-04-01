@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Paysera automated test">
+    <test name="More">
+        <classes>
+            <class name="more.SavingsTest"/>
+        </classes>
+    </test>
+    <test name="Settings">
+        <classes>
+            <class name="settings.SettingsPhoneNumberTest"/>
+        </classes>
+    </test>
+    <test name="Transfers">
+        <classes>
+            <class name="transfers.IdentificationTest"/>
+        </classes>
+    </test>
+</suite>
