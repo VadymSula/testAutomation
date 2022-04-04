@@ -1,27 +1,27 @@
 package waiters;
 
 import core.InitDriver;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.ios.IOSDriver;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Waiter {
-    private final IOSDriver<MobileElement> iosDriver;
+
+    private static final Logger log = Logger.getLogger(Waiter.class);
     WebDriverWait wait;
 
     public Waiter() {
-        this.iosDriver = InitDriver.getDriver();
+        IOSDriver<MobileElement> iosDriver = InitDriver.getDriver();
         this.wait = new WebDriverWait(iosDriver, 5L);
     }
 
-    public boolean waitForVisibility(MobileElement element) {
+    public void waitForVisibility(MobileElement element) {
         try {
             wait.until(ExpectedConditions.visibilityOf(element));
-            return true;
-        } catch (Exception ElementNotVisible) {
-            return false;
+        } catch (Exception elementNotVisible) {
+            log.error(elementNotVisible);
         }
     }
 

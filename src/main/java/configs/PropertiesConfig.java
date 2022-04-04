@@ -9,11 +9,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertiesConfig {
+
+    private static final String PATH_TO_CONFIG_PROPERTIES = "src/main/resources/conf.properties";
     protected static Properties PROPERTIES;
     private static final Logger log = Logger.getLogger(InitDriver.class);
 
     static {
-        File configFile = new File("src/main/resources/conf.properties");
+        File configFile = new File(PATH_TO_CONFIG_PROPERTIES);
 
         Properties properties = new Properties();
 

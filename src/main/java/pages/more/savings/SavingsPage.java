@@ -6,6 +6,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 import io.qameta.allure.Step;
 
 public class SavingsPage extends BasePage {
+
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'CREATE' AND type == 'XCUIElementTypeButton'")
     protected MobileElement CREATE_SAVING_BUTTON;
     @iOSXCUITFindBy(iOSNsPredicate = "label CONTAINS 'Vacation'")

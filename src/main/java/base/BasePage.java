@@ -13,6 +13,7 @@ import pages.settings.SettingsPage;
 import pages.transfer.TransferPage;
 
 public class BasePage {
+
     private IOSDriver<MobileElement> driver;
     protected Element element;
 
@@ -28,10 +29,6 @@ public class BasePage {
         element = new Element();
         this.setDriver(iosDriver);
         PageFactory.initElements(new AppiumFieldDecorator(iosDriver), this);
-    }
-
-    public IOSDriver<MobileElement> getDriver() {
-        return driver;
     }
 
     public void setDriver(IOSDriver<MobileElement> driver) {

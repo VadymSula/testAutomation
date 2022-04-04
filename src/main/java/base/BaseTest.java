@@ -1,5 +1,7 @@
 package base;
 
+import configs.PropertiesConfig;
+import pages.settings.SettingsPage;
 import utils.Listener;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -8,12 +10,13 @@ import static core.InitDriver.*;
 
 @Listeners(Listener.class)
 public class BaseTest {
+
     protected BasePage basePage = new BasePage();
-    private static final String PIN_CODE = "25802";
+    protected SettingsPage settingsPage = new SettingsPage();
 
     @BeforeClass
     public void inputPinCode() {
-        basePage.inputPinCode(PIN_CODE);
+        basePage.inputPinCode(PropertiesConfig.getProperty("pinCode"));
     }
 
     @AfterClass

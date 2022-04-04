@@ -11,7 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class InitDriver {
-    private static final String APPIUM_URL = "http://0.0.0.0:4723/wd/hub";
+
     private static final Logger log = Logger.getLogger(InitDriver.class);
     private static IOSDriver<MobileElement> driver;
 
@@ -29,7 +29,7 @@ public class InitDriver {
     }
 
     private static IOSDriver<MobileElement> initializeDriver() throws MalformedURLException {
-        return new IOSDriver<>(new URL(APPIUM_URL), setCapabilities());
+        return new IOSDriver<>(new URL(PropertiesConfig.getProperty("APPIUM_URL")), setCapabilities());
     }
 
     private static DesiredCapabilities setCapabilities() {

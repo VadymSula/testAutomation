@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import java.io.ByteArrayInputStream;
 
 public class Listener implements ITestListener {
+
     private void takeScreenshot() {
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(
                 ((TakesScreenshot) InitDriver.getDriver())
