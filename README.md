@@ -6,3 +6,5 @@
 ###### Scenario 2:  Phone number from Settings should be equal number, in My Profile.
 
 ###### Scenario 3:  After choose "Transfer" should be displayed Identification page.
+
+Recording video about test run https://drive.google.com/file/d/18AdEFDgQ1DepE1xpwBxrIK3av9R8c8cF/view
