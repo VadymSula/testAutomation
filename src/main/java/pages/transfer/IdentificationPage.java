@@ -9,6 +9,7 @@ public class IdentificationPage extends BasePage {
 
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`label == 'IDENTIFY NOW'`]")
     protected MobileElement IDENTIFY_NOW_BUTTON;
+
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeNavigationBar[`name == 'Identification'`]")
     protected MobileElement IDENTIFICATION_LABEL;
 

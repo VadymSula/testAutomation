@@ -9,6 +9,7 @@ public class TransferPage extends BasePage {
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='New Transfer']/..")
     protected MobileElement NEW_TRANSFER_BUTTON;
+
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='Paysera Transfer']/..")
     protected MobileElement PAYSERA_TRANSFER;
 

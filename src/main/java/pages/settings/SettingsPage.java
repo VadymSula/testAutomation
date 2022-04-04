@@ -10,6 +10,7 @@ public class SettingsPage extends BasePage {
 
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='View my profile']/following-sibling::*")
     protected MobileElement PHONE_NUMBER;
+
     @iOSXCUITFindBy(xpath = "//XCUIElementTypeStaticText[@name='View my profile']/..")
     protected MobileElement MY_PROFILE_BUTTON;
 

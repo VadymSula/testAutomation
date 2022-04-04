@@ -19,8 +19,10 @@ public class BasePage {
 
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'More'")
     protected MobileElement MORE_BUTTON;
+
     @iOSXCUITFindBy(accessibility = "HomeSettingsButtonAccessId")
     protected MobileElement SETTINGS_BUTTON;
+
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Transfers'")
     protected MobileElement TRANSFERS_BUTTON;
 

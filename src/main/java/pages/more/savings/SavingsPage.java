@@ -9,8 +9,10 @@ public class SavingsPage extends BasePage {
 
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'CREATE' AND type == 'XCUIElementTypeButton'")
     protected MobileElement CREATE_SAVING_BUTTON;
+
     @iOSXCUITFindBy(iOSNsPredicate = "label CONTAINS 'Vacation'")
     protected MobileElement VACATION_SECTION;
+
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Name '")
     protected MobileElement SAVING_NAME_FIELD;
 
