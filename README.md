@@ -7,4 +7,4 @@
 
 ###### Scenario 3:  After choose "Transfer" should be displayed Identification page.
 
-Recording video https://drive.google.com/file/d/18AdEFDgQ1DepE1xpwBxrIK3av9R8c8cF/view
+Recording video about test run https://drive.google.com/file/d/18AdEFDgQ1DepE1xpwBxrIK3av9R8c8cF/view
